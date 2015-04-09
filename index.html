@@ -22,6 +22,32 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61702644-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+    <script>
+    /**
+    * Function that tracks a click on an outbound link in Google Analytics.
+    * This function takes a valid URL string as an argument, and uses that URL string
+    * as the event label.
+    */
+    var track = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+         function () {
+         document.location = url;
+         }
+       });
+    }
+    </script>
 </head>
 
 <body>
@@ -35,42 +61,42 @@
                     <div class="row">
                       <div class="col-md-2">
                         <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-github" href="https://www.github.com/quackware">
+                            <a class="btn btn-social-icon btn-lg btn-github" href="https://www.github.com/quackware" onclick="track('github')">
                               <i class="fa fa-github"></i>
                             </a>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-youtube" href="https://www.youtube.com/quackware">
+                            <a class="btn btn-social-icon btn-lg btn-youtube" href="https://www.youtube.com/quackware" onclick="track('youtube')">
                               <i class="fa fa-youtube"></i>
                             </a>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-stack-overflow" href="http://stackoverflow.com/users/4728204/curtis">
+                            <a class="btn btn-social-icon btn-lg btn-stack-overflow" href="http://stackoverflow.com/users/4728204/curtis" onclick="track('stackoverflow')">
                               <i class="fa fa-stack-overflow"></i>
                             </a>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="service-item">
-                          <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/pub/curtis-larson">
+                          <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/pub/curtis-larson" onclick="track('linkedin')">
                             <i class="fa fa-linkedin"></i>
                           </a>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/curtis.m.larson">
+                            <a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/curtis.m.larson" onclick="track('facebook')">
                               <i class="fa fa-facebook"></i>
                             </a>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="service-item">
-                          <a class="btn btn-social-icon btn-lg btn-twitter" href="https://www.twitter.com/quackware">
+                          <a class="btn btn-social-icon btn-lg btn-twitter" href="https://www.twitter.com/quackware" onclick="track('twitter')">
                             <i class="fa fa-twitter"></i>
                           </a>
                         </div>
