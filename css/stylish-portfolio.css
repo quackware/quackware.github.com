@@ -190,6 +190,12 @@ hr.small {
     margin-bottom: 30px;
 }
 
+@media (min-width: 992px) {
+    .standard-height {
+      height: 42px;
+    }
+}
+
 /* Callout */
 
 .callout {
