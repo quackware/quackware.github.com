@@ -53,66 +53,105 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Curtis Larson</h1>
+  <!-- Header -->
+  <header id="top" class="header">
+    <div class="text-vertical-center">
+      <h1>Curtis Larson</h1>
+      <hr class="small">
+      <h2>Freelance Full Stack Developer</h2>
+      <br>
+      <a href="#services" class="btn red-button btn-lg">Services</a>
+      <a href="/blog" class="btn red-button btn-lg">Blog</a>
+      <a href="/blog/resume.pdf" class="btn red-button btn-lg">Resume</a>
+    </div>
+  </header>
+    <section id="services" class="services bg-primary">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1">
+            <h2>My Services</h2>
             <hr class="small">
-            <h2>Freelance Full Stack Developer</h2>
-            <h3>I'll build your next big idea.</h3>
-            <hr class="small">
-            <h3><a href="blog">Blog</a> | <a href="/blog/resume.pdf" onclick="track('resume')">Resume</a> | <a href="mailto:curtis@curtismlarson.com">Email</a></h3>
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <hr class="small">
-                    <div class="row">
-                      <div class="col-md-2">
-                        <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-github" href="https://www.github.com/quackware" onclick="track('https://www.github.com/quackware')">
-                              <i class="fa fa-github"></i>
-                            </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-youtube" href="https://www.youtube.com/quackware" onclick="track('https://www.youtube.com/quackware')">
-                              <i class="fa fa-youtube"></i>
-                            </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-stack-overflow" href="http://stackoverflow.com/users/4728204/curtis" onclick="track('http://stackoverflow.com/users/4728204/curtis')">
-                              <i class="fa fa-stack-overflow"></i>
-                            </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="service-item">
-                          <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/profile/view?id=133830767" onclick="track('https://www.linkedin.com/profile/view?id=133830767')">
-                            <i class="fa fa-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="service-item">
-                            <a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/curtis.m.larson" onclick="track('https://www.facebook.com/curtis.m.larson')">
-                              <i class="fa fa-facebook"></i>
-                            </a>
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="service-item">
-                          <a class="btn btn-social-icon btn-lg btn-twitter" href="https://www.twitter.com/quackware" onclick="track('https://www.twitter.com/quackware')">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-bars fa-stack-1x text-primary"></i>
+                </span>
+                    <h4>
+                      <strong>Full Stack Web Development</strong>
+                    </h4>
+                    <p>I can build your entire website from the ground up. All you need is an idea.</p>
+                    <a href="mailto:curtis@curtismlarson.com?subject=I'm interested in your Full Stack Development services" onclick="track('web-development')" class="btn btn-light">Learn More</a>
                 </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                </span>
+                    <h4>
+                      <strong>MeteorJS/NodeJS Consulting</strong>
+                    </h4>
+                    <p>I'm an expert JavaScript developer who can help you with your current MeteorJS or NodeJS problems.</p>
+                    <a href="mailto:curtis@curtismlarson.com?subject=I'm interested in your MeteorJS/NodeJS Consulting services" onclick="track('js-consulting')" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-android fa-stack-1x text-primary"></i>
+                </span>
+                    <h4>
+                      <strong>Android Application Development</strong>
+                    </h4>
+                    <p>I've built several Android apps featured in the play store. Let me build your idea.</p>
+                    <a href="mailto:curtis@curtismlarson.com?subject=I'm interested in your Android App Development services" onclick="track('android')" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                </span>
+                    <h4>
+                      <strong>Anything Else</strong>
+                    </h4>
+                    <p>Whether it's front-end development or C++ and Big Data projects. Let me know what you need and I can see what I can do.</p>
+                    <a href="mailto:curtis@curtismlarson.com?subject=I'm interested in your consulting services" onclick="track('consulting')" class="btn btn-light">Learn More</a>
+                </div>
+              </div>
             </div>
+            <!-- /.row (nested) -->
+          </div>
+          <!-- /.col-lg-10 -->
         </div>
-    </header>
-</body>
-
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <ul class="list-inline">
+              <li>
+                <a href="https://www.github.com/quackware" onclick="track('https://www.github.com/quackware')"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                <a href="https://www.youtube.com/quackware" onclick="track('https://www.youtube.com/quackware')"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
+                <a href="http://stackoverflow.com/users/4728204/curtis" onclick="track('http://stackoverflow.com/users/4728204/curtis')"><i class="fa fa-stack-overflow fa-fw fa-3x"></i></a>
+                <a href="https://www.linkedin.com/profile/view?id=133830767" onclick="track('https://www.linkedin.com/profile/view?id=133830767')"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                <a href="https://www.facebook.com/curtis.m.larson" onclick="track('https://www.facebook.com/curtis.m.larson')"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                <a href="https://www.twitter.com/quackware" onclick="track('https://www.twitter.com/quackware')"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Curtis Larson 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
