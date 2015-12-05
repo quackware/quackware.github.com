@@ -1,9 +1,6 @@
-console.log("a");
-
 $("#contactModal").on("show.bs.modal", function (event) {
-  console.log("show!");
   var button = $(event.relatedTarget);
-  var type = button.data("type");
+  var type = button.data("buttontype");
 
   var modal = $(this);
   var subject = "";
@@ -14,11 +11,24 @@ $("#contactModal").on("show.bs.modal", function (event) {
   switch (type) {
     case "web-development":
       subject = "Full Stack Development Services";
-      message = "I'm Interested in your Full Stack Development Services! " +
+      message = "I'm interested in your Full Stack Development Services! " +
+        message;
+      break;
+    case "js-consulting":
+      subject = "JavaScript Consulting Services";
+      message = "I'm interested in your JavaScript Consulting Services! " +
+        message;
+      break;
+    case "android":
+      subject = "Android Services";
+      message = "I'm interested in your Android Services! " + message;
+      break;
+    case "consulting":
+      subject = "General Consulting Services";
+      message = "I'm interested in your General Consulting Services! " +
         message;
       break;
   }
-  console.log(subject, message);
   modal.find("#message").text(message);
   modal.find("#subject").text(subject);
 });
