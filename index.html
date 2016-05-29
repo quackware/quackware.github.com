@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,123 +58,201 @@
 <body>
   <!-- Header -->
   <header id="top" class="header">
-    <div class="text-vertical-center">
-      <h1>Curtis Larson</h1>
-      <hr class="small">
-      <h2>NYC Based Freelance Full Stack Developer</h2>
-      <br>
-      <a href="#services" class="btn red-button btn-lg">Services</a>
-      <a href="/blog" class="btn red-button btn-lg">Blog</a>
-      <a href="/blog/resume.pdf" class="btn red-button btn-lg">Resume</a>
+    <div class="container text-vertical-center">
+      <div class="row">
+        <h1>Curtis Larson</h1>
+        <hr class="small">
+        <h2>NYC Based Freelance Full Stack Developer</h2>
+        <br>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-4 col-xs-5 col-xs-offset-1">
+            <a href="#services" class="btn btn-block red-button btn-lg">Services</a>
+          </div>
+          <div class="col-md-2 col-xs-5">
+            <a href="#portfolio" class="btn btn-block red-button btn-lg">Recent Work</a>
+          </div>
+        </div>
+        <div class="row small-margin">
+          <div class="col-md-2 col-md-offset-4 col-xs-5 col-xs-offset-1">
+            <a href="/blog" class="btn btn-block red-button btn-lg">Blog</a>
+          </div>
+          <div class="col-md-2 col-xs-5">
+            <a href="/blog/resume.pdf" class="btn btn-block red-button btn-lg">Resume</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
-    <section id="services" class="services bg-primary">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-12">
-            <h2>My Services</h2>
-            <hr class="small">
-            <div class="row">
-              <div class="col-md-2 col-sm-6 col-md-offset-1">
-                <div class="service-item">
-                    <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-bars fa-stack-1x text-primary"></i>
-                </span>
-                    <h4>
-                      <strong>Full Stack Web Development</strong>
-                    </h4>
-                    <p>I can build your entire website from the ground up. All you need is an idea.</p>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="web-development" onclick="track('web-development')">Learn More</button>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                <div class="service-item">
-                    <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-video-camera fa-stack-1x text-primary"></i>
-                </span>
-                    <h4>
-                      <strong>Meteor Video Tutorials</strong>
-                    </h4>
-                    <p>Learn all about Meteor in these profesionally made Meteor video tutorials. Use coupon code 'quack-website' for 20% off.</p>
-                    <a href="https://www.udemy.com/user/curtis-larson/" onclick="track('video-tutorials')" class="btn btn-light">Learn More</a>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                <div class="service-item">
-                    <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                </span>
-                    <h4 class="standard-height">
-                      <strong>JavaScript Consulting</strong>
-                    </h4>
-                    <p>I'm an expert JavaScript developer who can help you with your current Meteor, Node, and React problems.</p>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="js-consulting" onclick="track('js-consulting')">Learn More</button>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                <div class="service-item">
-                    <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-android fa-stack-1x text-primary"></i>
-                </span>
-                    <h4 class="standard-height">
-                      <strong>Android Application Development</strong>
-                    </h4>
-                    <p>I've built several Android apps featured in the play store. Let me build your idea.</p>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="android" onclick="track('android')">Learn More</button>
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-6">
-                <div class="service-item">
-                    <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                </span>
-                    <h4 class="standard-height">
-                      <strong>Anything Else</strong>
-                    </h4>
-                    <p>Whether it's front-end development or C++ and Big Data projects, I'll build it.</p>
-                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="consulting" onclick="track('consulting')">Learn More</button>
-                </div>
+  <section id="services" class="services bg-primary">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2>My Services</h2>
+          <hr class="small">
+          <div class="row">
+            <div class="col-md-2 col-sm-6 col-md-offset-1">
+              <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bars fa-stack-1x text-primary"></i>
+              </span>
+                  <h4>
+                    <strong>Full Stack Web Development</strong>
+                  </h4>
+                  <p>I can build your entire website from the ground up. All you need is an idea.</p>
+                  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="web-development" onclick="track('web-development')">Learn More</button>
               </div>
             </div>
-            <!-- /.row (nested) -->
+            <div class="col-md-2 col-sm-6">
+              <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-video-camera fa-stack-1x text-primary"></i>
+              </span>
+                  <h4>
+                    <strong>Meteor Video Tutorials</strong>
+                  </h4>
+                  <p>Learn all about Meteor in these profesionally made Meteor video tutorials. Use coupon code 'quack-website' for 20% off.</p>
+                  <a href="https://www.udemy.com/user/curtis-larson/" onclick="track('video-tutorials')" class="btn btn-light">Learn More</a>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-compass fa-stack-1x text-primary"></i>
+              </span>
+                  <h4 class="standard-height">
+                    <strong>JavaScript Consulting</strong>
+                  </h4>
+                  <p>I'm an expert JavaScript developer who can help you with your current Meteor, Node, and React problems.</p>
+                  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="js-consulting" onclick="track('js-consulting')">Learn More</button>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-android fa-stack-1x text-primary"></i>
+              </span>
+                  <h4 class="standard-height">
+                    <strong>Android Application Development</strong>
+                  </h4>
+                  <p>I've built several Android apps featured in the play store. Let me build your idea.</p>
+                  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="android" onclick="track('android')">Learn More</button>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+              </span>
+                  <h4 class="standard-height">
+                    <strong>Anything Else</strong>
+                  </h4>
+                  <p>Whether it's front-end development or C++ and Big Data projects, I'll build it.</p>
+                  <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactModal" data-buttontype="consulting" onclick="track('consulting')">Learn More</button>
+              </div>
+            </div>
           </div>
-          <!-- /.col-lg-10 -->
+          <!-- /.row (nested) -->
         </div>
-        <!-- /.row -->
+        <!-- /.col-lg-10 -->
       </div>
-      <!-- /.container -->
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-lg-offset-1 text-center">
-            <h4>Contact Me</h4>
-            <h5>curtis@curtismlarson.com</h5>
-          </div>
-        </div>
-        <div class="row" style="margin-top:10px;">
-          <div class="col-lg-10 col-lg-offset-1 text-center">
-            <ul class="list-inline">
-              <li>
-                <a href="https://www.github.com/quackware" onclick="track('https://www.github.com/quackware')"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                <a href="https://www.youtube.com/quackware" onclick="track('https://www.youtube.com/quackware')"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
-                <a href="http://stackoverflow.com/users/4728204/curtis" onclick="track('http://stackoverflow.com/users/4728204/curtis')"><i class="fa fa-stack-overflow fa-fw fa-3x"></i></a>
-                <a href="https://www.linkedin.com/profile/view?id=133830767" onclick="track('https://www.linkedin.com/profile/view?id=133830767')"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                <a href="https://www.facebook.com/curtis.m.larson" onclick="track('https://www.facebook.com/curtis.m.larson')"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                <a href="https://www.twitter.com/quackware" onclick="track('https://www.twitter.com/quackware')"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-              </li>
-            </ul>
-            <hr class="small">
-            <p class="text-muted">Copyright &copy; Curtis Larson 2015</p>
-          </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-xs-12 text-center">
+          <h2>Recent Work</h2>
+          <hr class="small">
         </div>
       </div>
-    </footer>
+      <div class="row">
+        <div class="col-md-6 col-xs-12 portfolio-item">
+          <a href="https://www.synergystylists.com" class="text-center">
+            <h3>Synergy Stylists</h3>
+            <img src="img/synergy.jpg" class="img-responsive center-block"/>
+          </a>
+          <h5><b>Description:</b> Two sided marketplace that allows clients to book and pay for a hairstylist/makeup artist. Stylists can confirm and track their booked appointments as well as manage their profile.</h5>
+          <h5><b>Role:</b> Built entire frontend and backend portion of the website.</h5>
+          <h5><b>Technologies:</b> React, Node, AWS DynamoDB, AWS Lambda, AWS API Gateway</h5>
+        </div>
+        <div class="col-md-6 col-xs-12 portfolio-item">
+          <a href="http://www.sunsationalswimschool.com/" class="text-center">
+            <h3>Sunsational Swim School</h3>
+            <img src="img/sunsational.jpg" class="img-responsive center-block"/>
+          </a>
+          <h5><b>Description:</b> Sunsational Swim School provides private swimming lessons in cities across the country, from certified instructors.</h5>
+          <h5><b>Role:</b> Migrated existing MySQL database to new site. Built backend portion of new login process and auto generated SEO pages.</h5>
+          <h5><b>Technologies:</b> Node, MySQL</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12 portfolio-item">
+          <a href="http://www.funguroo.me" class="text-center">
+            <h3>Funguroo</h3>
+            <img src="img/funguroo.jpg" class="img-responsive center-block"/>
+          </a>
+          <h5><b>Description:</b> A children's website that combines wishlists and social invites.</h5>
+          <h5><b>Role:</b> Built entire frontend and backend portion of the website.</h5>
+          <h5><b>Technologies:</b> Meteor, MongoDB</h5>
+        </div>
+        <div class="col-md-6 col-xs-12 portfolio-item">
+          <a href="https://www.brigad.co/" class="text-center">
+            <h3>Brigad</h3>
+            <img src="img/brigad.jpg" class="img-responsive center-block"/>
+          </a>
+          <h5><b>Description:</b> A webapp that allows restaurants and employees to connect to each other. They can reach out and apply/offer jobs to each other.</h5>
+          <h5><b>Role:</b> Built frontend and backend of initial prototype from which current website is built on.</h5>
+          <h5><b>Technologies:</b> Meteor, MongoDB</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12 portfolio-item">
+          <a href="http://www.fetchpop.com/" class="text-center">
+            <h3>Fetchpop</h3>
+            <img src="img/fetchpop.jpg" class="img-responsive center-block"/>
+          </a>
+          <h5><b>Description:</b> IOS app for photo/meme card sharing.</h5>
+          <h5><b>Role:</b> Built responsive landing page.</h5>
+          <h5><b>Technologies:</b> Html, CSS</h5>
+        </div>
+        <div class="col-md-6 col-xs-12 portfolio-item">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <h4>Contact Me</h4>
+          <h5>curtis@curtismlarson.com</h5>
+        </div>
+      </div>
+      <div class="row" style="margin-top:10px;">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.github.com/quackware" onclick="track('https://www.github.com/quackware')"><i class="fa fa-github fa-fw fa-3x"></i></a>
+              <a href="https://www.youtube.com/quackware" onclick="track('https://www.youtube.com/quackware')"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
+              <a href="http://stackoverflow.com/users/4728204/curtis" onclick="track('http://stackoverflow.com/users/4728204/curtis')"><i class="fa fa-stack-overflow fa-fw fa-3x"></i></a>
+              <a href="https://www.linkedin.com/profile/view?id=133830767" onclick="track('https://www.linkedin.com/profile/view?id=133830767')"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+              <a href="https://www.facebook.com/curtis.m.larson" onclick="track('https://www.facebook.com/curtis.m.larson')"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+              <a href="https://www.twitter.com/quackware" onclick="track('https://www.twitter.com/quackware')"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+            </li>
+          </ul>
+          <hr class="small">
+          <p class="text-muted">Copyright &copy; Curtis Larson 2015</p>
+        </div>
+      </div>
+    </div>
+  </footer>
     <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
