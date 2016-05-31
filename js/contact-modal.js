@@ -10,8 +10,8 @@ $("#contactModal").on("show.bs.modal", function (event) {
   message += "Additional Notes:\n";
   switch (type) {
     case "web-development":
-      subject = "Full Stack Development Services";
-      message = "I'm interested in your Full Stack Development Services! " +
+      subject = "Custom Software & Web Development";
+      message = "I'm interested in your Custom Software & Web Development Services! " +
         message;
       break;
     case "js-consulting":
